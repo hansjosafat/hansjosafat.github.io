@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hans Josafat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header>
+    <video class="header-video-bg" autoplay muted loop playsinline>
+      <source src="assets/header-bg.mp4" type="video/mp4">
+    </video>
+    <div class="header-overlay"></div>
+    <h1>Hans Josafat</h1>
+  </header>
+
+  <nav id="tab-bar">
+    <button class="tab active" data-tab="about">About</button>
+    <button class="tab" data-tab="games">Games</button>
+    <button class="tab" data-tab="vr">VR Simulations</button>
+    <button class="tab" data-tab="educational">Educational</button>
+  </nav>
+
+  <main id="content">
+
+    <!-- ======= ABOUT ======= -->
+
+    <section id="about-section" data-tab="about">
+      <div class="about-hero">
+        <img src="assets/profile.jpeg" alt="Hans Josafat" class="profile-pic" />
+        <div class="about-bio">
+          <!-- <h2 class="section-heading">About Me</h2> -->
+          <p>Senior Unity Developer | XR Developer | AI Integration | 6+ Years Professional Experience</p>
+          <br />
+          <p>I'm a self-taught developer who started coding in 2016 during college while studying BS in Electronics
+            Engineering. To stay ahead, I'm using AI-assisted software development when needed/requested.</p>
+          <br />
+          <p>What began as personal game projects on Google Play turned into a full professional career in Unity, XR,
+            and software engineering.
+            One of my proudest milestones is Deserted Zombie Survival which is an Android game that hit 600,000+ total
+            downloads, built entirely out of passion and without the use of AI tools.</p>
+        </div>
+      </div>
+
+      <div class="about-experience">
+        <h2 class="section-heading">Experience</h2>
+        <div class="experience-list">
+          <div class="experience-item">
+            <span class="exp-year">2016 - Present</span>
+            <div>
+              <strong>Founder | Developer</strong>
+              <p>Master Key Games Interactive</p>
+            </div>
+          </div>
+          <div class="experience-item">
+            <span class="exp-year">Jul 2024 - Present</span>
+            <div>
+              <strong>Senior Unity Developer</strong>
+              <p>MadXR</p>
+            </div>
+          </div>
+          <div class="experience-item">
+            <span class="exp-year">Jul 2023 - Jul 2024</span>
+            <div>
+              <strong>Mid Unity Developer</strong>
+              <p>MadXR</p>
+            </div>
+          </div>
+          <div class="experience-item">
+            <span class="exp-year">Jul 2022 - Jun 2023</span>
+            <div>
+              <strong>.Net Software Engineer</strong>
+              <p>Yondu, Inc.</p>
+            </div>
+          </div>
+          <div class="experience-item">
+            <span class="exp-year">Feb 2020 - Jul 2022</span>
+            <div>
+              <strong>Associate Software Development Engineer</strong>
+              <p>Analog Devices</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-categories">
+        <h2 class="section-heading">My Work</h2>
+        <div class="category-btns">
+          <button class="category-btn" data-goto="games">Games</button>
+          <button class="category-btn" data-goto="vr">VR Simulations</button>
+          <button class="category-btn" data-goto="educational">Educational</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= GAMES ======= -->
+
+    <section class="project" data-tab="games">
+      <h2 class="project-name">Project Title</h2>
+      <div class="project-media">
+        <video autoplay loop muted playsinline>
+          <source src="assets/projects/project-slug/video.mp4" type="video/mp4" />
+          <img src="assets/projects/project-slug/banner.jpg" alt="Project Title banner" />
+        </video>
+      </div>
+      <div class="screenshots">
+        <img src="assets/projects/project-slug/screenshots/01.jpg" alt="Screenshot 1" />
+        <img src="assets/projects/project-slug/screenshots/02.jpg" alt="Screenshot 2" />
+        <img src="assets/projects/project-slug/screenshots/03.jpg" alt="Screenshot 3" />
+      </div>
+      <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+        anim id est laborum..</p>
+    </section>
+
+    <div class="gif-divider" data-tab="games">
+      <img src="assets/gifs/games.gif" alt="" role="presentation" />
+    </div>
+
+    <!-- ======= VR SIMULATIONS ======= -->
+
+    <section class="project" data-tab="vr">
+      <h2 class="project-name">VR Project Title</h2>
+      <div class="project-media">
+        <img src="assets/projects/vr-project-slug/banner.jpg" alt="VR Project banner" />
+      </div>
+      <div class="screenshots">
+        <img src="assets/projects/vr-project-slug/screenshots/01.jpg" alt="Screenshot 1" />
+        <img src="assets/projects/vr-project-slug/screenshots/02.jpg" alt="Screenshot 2" />
+      </div>
+      <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+        anim id est laborum..</p>
+    </section>
+
+    <div class="gif-divider" data-tab="vr">
+      <img src="assets/gifs/vr.gif" alt="" role="presentation" />
+    </div>
+
+    <!-- ======= EDUCATIONAL ======= -->
+
+    <section class="project" data-tab="educational">
+      <h2 class="project-name">Educational Project Title</h2>
+      <div class="project-media">
+        <img src="assets/projects/edu-project-slug/banner.jpg" alt="Educational Project banner" />
+      </div>
+      <div class="screenshots">
+        <img src="assets/projects/edu-project-slug/screenshots/01.jpg" alt="Screenshot 1" />
+        <img src="assets/projects/edu-project-slug/screenshots/02.jpg" alt="Screenshot 2" />
+      </div>
+      <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+        anim id est laborum..</p>
+    </section>
+
+    <div class="gif-divider" data-tab="educational">
+      <img src="assets/gifs/educational.gif" alt="" role="presentation" />
+    </div>
+
+    <!-- ======= EDUCATIONAL ======= -->
+
+     <section class="project" data-tab="educational">
+      <h2 class="project-name">Educational Project Title</h2>
+      <div class="project-media">
+        <img src="assets/projects/edu-project-slug/banner.jpg" alt="Educational Project banner" />
+      </div>
+      <div class="screenshots">
+        <img src="assets/projects/edu-project-slug/screenshots/01.jpg" alt="Screenshot 1" />
+        <img src="assets/projects/edu-project-slug/screenshots/02.jpg" alt="Screenshot 2" />
+      </div>
+      <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+        anim id est laborum..</p>
+    </section>
+
+    <div class="gif-divider" data-tab="educational">
+      <img src="assets/gifs/educational.gif" alt="" role="presentation" />
+    </div>
+
+  </main>
+
+  <footer id="site-footer">
+    <div class="footer-inner">
+      <div class="footer-contact">
+        <h3 class="footer-heading">Contact</h3>
+        <p>Need my services? Reach out at <a href="mailto:hansjosafatdev@gmail.com">hansjosafatdev@gmail.com</a></p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/hansjosafat" target="_blank" rel="noopener" class="footer-social">GitHub</a>
+        <a href="https://mkgamesinteractive.itch.io" target="_blank" rel="noopener" class="footer-social">itch.io</a>
+        <a href="https://linkedin.com/in/hans-josafat/" target="_blank" rel="noopener"
+          class="footer-social">LinkedIn</a>
+      </div>
+    </div>
+    <p class="footer-copy">&copy; <span id="year"></span> Hans Josafat</p>
+  </footer>
+
+  <button id="back-to-top" aria-label="Back to top">&#8679;</button>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
