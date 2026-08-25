@@ -47,3 +47,16 @@ backToTop.addEventListener('click', () => {
 
 // set copyright year dynamically
 document.getElementById('year').textContent = new Date().getFullYear();
+
+// YouTube facade: swap thumbnail for live iframe on click
+document.querySelectorAll('.yt-facade').forEach(facade => {
+  facade.addEventListener('click', () => {
+    const iframe = document.createElement('iframe');
+    iframe.src = `https://www.youtube.com/embed/${facade.dataset.vid}?autoplay=1`;
+    iframe.allow = 'autoplay; encrypted-media; picture-in-picture';
+    iframe.allowFullscreen = true;
+    facade.innerHTML = '';
+    facade.appendChild(iframe);
+    facade.classList.remove('yt-facade');
+  }, { once: true });
+});
