@@ -116,6 +116,7 @@ header h1 {
 }
 .project-media video,
 .project-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.project-media iframe { width: 100%; height: 100%; display: block; border: 0; }
 
 /* Screenshot strip */
 .screenshots {
@@ -142,7 +143,7 @@ header h1 {
 }
 .screenshots img:hover { opacity: 0.85; }
 
-.description { color: var(--muted); font-size: 0.95rem; max-width: 70ch; }
+.description { color: var(--muted); font-size: 0.95rem; max-width: 100vw; }
 
 /* GIF divider */
 .gif-divider {
