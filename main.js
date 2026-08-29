@@ -48,6 +48,23 @@ backToTop.addEventListener('click', () => {
 // set copyright year dynamically
 document.getElementById('year').textContent = new Date().getFullYear();
 
+// sticky header: keep tab bar positioned directly below header
+const headerEl = document.querySelector('header');
+function updateHeaderHeight() {
+  document.documentElement.style.setProperty('--header-h', headerEl.offsetHeight + 'px');
+}
+updateHeaderHeight();
+window.addEventListener('resize', updateHeaderHeight, { passive: true });
+
+// collapsible experience details
+document.querySelectorAll('.exp-toggle').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const expanded = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!expanded));
+    btn.nextElementSibling.classList.toggle('open', !expanded);
+  });
+});
+
 // YouTube facade: swap thumbnail for live iframe on click
 document.querySelectorAll('.yt-facade').forEach(facade => {
   facade.addEventListener('click', () => {
