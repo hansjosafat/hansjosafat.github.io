@@ -22,7 +22,8 @@
     <button class="tab active" data-tab="about">About</button>
     <button class="tab" data-tab="games">Games</button>
     <button class="tab" data-tab="vr">VR Simulations</button>
-    <button class="tab" data-tab="educational">Educational</button>
+    <!-- <button class="tab" data-tab="educational">Educational</button> -->
+    <a class="tab-cta" href="#site-footer">Hire Me</a>
   </nav>
 
   <main id="content">
@@ -55,15 +56,19 @@
             <li>UI design</li>
             <li>Shipping across mobile, PC, and VR</li>
           </ul>
-          <br />
-          <p><b>Available for contract work:</b></p>
-          <ul>
-            <li>Game development (VR, mobile, PC)</li>
-            <li>Performance optimization & porting</li>
-            <li>Technical consultation</li>
-          </ul>
-          <br />
-          <p>Contact me at: <a href="mailto:hansjosafatdev@gmail.com">hansjosafatdev@gmail.com</a></p>
+
+          <div id="hire-section">
+            <a class="availability-badge" href="#hire-section"><span class="status-dot" aria-hidden="true"></span>Available for contract work</a>
+            <ul class="hire-list">
+              <li>Game development (VR, mobile, PC)</li>
+              <li>Performance optimization &amp; porting</li>
+              <li>Technical consultation</li>
+              <li>Web development</li>
+            </ul>
+            <p class="hire-contact">
+              <a class="hire-link" href="mailto:hansjosafatdev@gmail.com?subject=Contract%20Inquiry">Contact me</a>
+            </p>
+          </div>
         </div>
       </div>
 
@@ -86,7 +91,7 @@
             </div>
           </div>
           <div class="experience-item">
-            <span class="exp-year">Jul 2024 - Present</span>
+            <span class="exp-year">Jul 2024 - Sep 2026</span>
             <div>
               <button class="exp-toggle" aria-expanded="false">
                 <strong>Senior Unity Developer</strong>
@@ -150,14 +155,14 @@
         </div>
       </div>
 
-      <div class="about-categories">
+      <!-- <div class="about-categories">
         <h2 class="section-heading">My Work</h2>
         <div class="category-btns">
           <button class="category-btn" data-goto="games">Games</button>
           <button class="category-btn" data-goto="vr">VR Simulations</button>
           <button class="category-btn" data-goto="educational">Educational</button>
         </div>
-      </div>
+      </div> -->
     </section>
 
     <!-- ======= GAMES ======= -->
@@ -296,7 +301,7 @@
 
     <!-- ======= EDUCATIONAL ======= -->
 
-    <section class="project" data-tab="educational">
+    <!-- <section class="project" data-tab="educational">
       <h2 class="project-name">To be added...</h2>
       <div class="project-media">
         <img src="assets/projects/edu-project-slug/banner.jpg" alt="Educational Project banner" />
@@ -314,7 +319,7 @@
 
     <div class="gif-divider" data-tab="educational">
       <img src="assets/gifs/educational.gif" alt="" role="presentation" />
-    </div>
+    </div> -->
 
   </main>
 
@@ -323,8 +328,9 @@
   <footer id="site-footer">
     <div class="footer-inner">
       <div class="footer-contact">
-        <h3 class="footer-heading">Contact</h3>
-        <p>Need my services? Reach out at <a href="mailto:hansjosafatdev@gmail.com">hansjosafatdev@gmail.com</a></p>
+        <h3 class="footer-heading">Available for Contract Work</h3>
+        <p>Need my services? Reach out at <a href="mailto:hansjosafatdev@gmail.com?subject=Contract%20Inquiry">hansjosafatdev@gmail.com</a></p>
+        <a class="hire-btn footer-cta" href="mailto:hansjosafatdev@gmail.com?subject=Contract%20Inquiry">Contact Me</a>
       </div>
       <div class="footer-links">
         <a href="https://masterkey.games" target="_blank" rel="noopener" class="footer-social">Website</a>
